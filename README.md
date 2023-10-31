@@ -22,8 +22,8 @@ To compile and run the code for this assignment, follow these steps:
 This will compile the code and generate the .class files.
 
 ### running the Program
-After compiling the code, you can run the program as follows: java assignmentone
-=> This will execute the assignmentone program, and you should see the program's output in the console.
+1. After compiling the code, you can run the program as follows: java assignmentone
+2. This will execute the assignmentone program, and you should see the program's output in the console.
 
 ### code Structure
 1. assignmentone.java: This file contains the main Java program for loading users, generating hashed passwords, and sorting users based on different criteria.
