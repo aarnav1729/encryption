@@ -1,5 +1,3 @@
-package edu.csc.csc420.week1b;
-
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;

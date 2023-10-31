@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.FileReader;
 import java.io.BufferedReader;
 
-public class Assignmentone {
+public class assignmentone {
     public static void main(String [] args) {
 
         //Display name and email and message
@@ -43,7 +43,7 @@ public class Assignmentone {
         }
     }
 
-    public static List<user> load(String filename) {
+    public static List<User> load(String filename) {
         List<User> users = new ArrayList<>();
 
         try(BufferedReader br = new BufferedReader(new FileReader(filename))) {
