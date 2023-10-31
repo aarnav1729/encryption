@@ -1,7 +1,7 @@
 # encryption
 CSC420 Data Structures and Algorithms, Assignment 1, Password Encryption in Java.
 
-## prerequisites
+### prerequisites
 To complete this assignment, you will need the following:
 1. Java Development Kit (JDK) installed on your computer.
 2. A code editor or Integrated Development Environment (IDE) such as Visual Studio Code, IntelliJ IDEA, or Eclipse.
