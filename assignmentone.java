@@ -12,6 +12,7 @@ public class assignmentone {
         //displaying the name and email and acknowledgement message
         System.out.println("name: aarnav singh");
         System.out.println("\nemail: chhabraa@csp.edu");
+        
         System.out.println("\nsubmitted by aarnav singh, i certify that this is my own work");
 
         //calling the function to load the user and password data from the .txt file
