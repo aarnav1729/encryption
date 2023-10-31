@@ -1,42 +1,47 @@
+//imports
 import java.util.*;
 import java.io.FileReader;
 import java.io.BufferedReader;
 
+//creating a class
 public class assignmentone {
+
+    //creating a method that can be accessed without creating an instance of the class
     public static void main(String [] args) {
 
-        //Display name and email and message
+        //displaying the name and email and acknowledgement message
         System.out.println("name: aarnav singh");
         System.out.println("\nemail: chhabraa@csp.edu");
         System.out.println("\nsubmitted by aarnav singh, i certify that this is my own work");
 
-        //Function call to load the info
+        //calling the function to load the user and password data from the .txt file
         List<User> users = load("unencryptedPasswords.txt");
 
-        //Generate hashed passwords for each user using the function in PasswordHasher
+        //generate hashed passwords for each user using the function in PasswordHasher
         for (User user: users) {
             user.setHashedPassword(PasswordHasher.makeHashedPassword(user.getPassword(), user.getSalt()));
         }
 
-        //Sort and display users by username
+        //sort and display users by username
         Collections.sort(users, User.UsernameComparator);
-        System.out.println("\nsorted by username: ");
+        System.out.println("\ndisplay sorted by username: \n----------------");
+        
 
         for (User user: users) {
             System.out.println(user);
         }
 
-        //Sort and display users by password
+        //sort and display users by password
         Collections.sort(users, User.PasswordComparator);
-        System.out.println("\nsorted by password: ");
+        System.out.println("\ndisplay sorted by password: \n----------------");
 
         for (User user: users) {
             System.out.println(user);
         }
 
-        //Sort and display users by hashed password
+        //sort and display users by hashed password
         Collections.sort(users, User.HashedPasswordComparator);
-        System.out.println("\nsorted by hashed password: ");
+        System.out.println("\ndisplay sorted by hashed password: \n----------------");
 
         for (User user: users) {
             System.out.println(user);
@@ -105,6 +110,6 @@ class User {
 
     @Override
     public String toString() {
-        return "username: " + username + ", password: " + password + ", hashed password: " + hashedPassword;
+        return "user: " + username + "\n    password: " + password + "\n    hashed password: " + hashedPassword;
     }
 }
